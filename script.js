@@ -41,3 +41,13 @@ form.addEventListener('submit', function(event) {
     formMessage.textContent = '';
   }
 });
+
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', function() {
+    // Remove 'active' from all nav links
+    document.querySelectorAll('.nav-link').forEach(nav => nav.classList.remove('active'));
+    // Add 'active' to the clicked link
+    this.classList.add('active');
+  });
+});
+
