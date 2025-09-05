@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">My Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero/Home Section -->
+<section id="home" class="hero">
+  <div class="container">
+     <h1 className="display-3 fw-bold">
+          <span>Hi, I'm </span>
+          <span className="text-warning">Badal Kumar Nayak</span>
+        </h1>
+        <h2 className="text-secondary">A Passionate Web Developer</h2>
+        <p className="lead">I build modern and responsive web applications.</p>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects py-5">
+  <div class="container">
+    <h2 class="mb-4 text-center">Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 1" />
+          <div class="card-body ">
+            <h5 class="card-title ">Project Title</h5>
+            <p class="card-text">Placeholder description for project one.</p>
+            <a href="#" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 2" />
+          <div class="card-body">
+            <h5 class="card-title r">Project Title</h5>
+            <p class="card-text">Placeholder description for project two.</p>
+            <a href="#" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 3" />
+          <div class="card-body">
+            <h5 class="card-title ">Project Title</h5>
+            <p class="card-text">Placeholder description for project three.</p>
+            <a href="#" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4 text-center">Contact Me</h2>
+    <form id="contactForm" novalidate>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name *</label>
+        <input type="text" class="form-control" id="name" required />
+        <div class="invalid-feedback">Please enter your name.</div>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address *</label>
+        <input type="email" class="form-control" id="email" required />
+        <div class="invalid-feedback">Please enter a valid email address.</div>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message *</label>
+        <textarea class="form-control" id="message" rows="4" required></textarea>
+        <div class="invalid-feedback">Please enter a message.</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Send</button>
+      <div id="formMessage" class="mt-3"></div>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer mt-5">
+  <div class="container">
+    <p class="mb-0">&copy; 2025 Badal Kumar Nayak. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Link to external JS -->
+<script src="script.js"></script>
+</body>
+</html>
